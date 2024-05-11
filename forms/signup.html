@@ -1,18 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js"></script>
 </head>
+
 <body>
 
   <div class="form">
     <div class="title">Form Exercise </div>
 
-    
+
     <form action="" method="" onsubmit="return validateForm()">
 
       <div class="field-container">
@@ -20,62 +22,64 @@
         <input type="text" id="fullname" name="fullname" required><br>
       </div>
 
-      
-        <div class="field-container">
-          <label for="email">Email:</label><br>
-          <input type="email" id="email" name="email" required><br>
-        </div>
 
-        <div class="field-container">
-          <label for="password">Password:</label><br>
-          <input type="password" id="password" name="password" required minlength="8"><br>
-        </div>
+      <div class="field-container">
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br>
+      </div>
 
-        <div class="field-container">
-          <label for="birthdate">Date of Birth:</label><br>
-          <input type="date" id="birthdate" name="birthdate" required><br>
-        </div>
-      
-        <div class="field-container">
-          <label for="gender">Gender:</label><br>
-          <select id="genderSelect" name="gender" required>
-            <option value="">Select...</option>
-            <option value="male">Male</option>
-            <option value="female">Female</option>
-            <option value="other">Other</option>
-          </select><br>
-        </div>
+      <div class="field-container">
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required minlength="8"><br>
+      </div>
 
-        <div class="field-container">
-          <label for="country">Country:</label><br>
-          <input type="text" id="countryInput" name="country" required><br>
-        </div>
+      <div class="field-container">
+        <label for="birthdate">Date of Birth:</label><br>
+        <input type="date" id="birthdate" name="birthdate" required><br>
+      </div>
 
-        <div class="field-container">
-          <label for="newsletter">Subscribe to newsletter:</label>
-          <input type="checkbox" id="newsletterCheckbox" name="newsletter" value="yes"><br><br>
-        </div>
+      <div class="field-container">
+        <label for="gender">Gender:</label><br>
+        <select id="genderSelect" name="gender" required>
+          <option value="">Select...</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select><br>
+      </div>
 
-        <div class="field-container">
-          <label for="terms">Agree to terms and conditions:</label>
-          <input type="checkbox" id="termsCheckbox" name="terms" required><br>
-        </div>
+      <div class="field-container">
+        <label for="country">Country:</label><br>
+        <input type="text" id="countryInput" name="country" required><br>
+      </div>
 
-        <div class="field-container avatar">
-          <label for="avatar">Upload Avatar:</label><br>
-          <input type="file" id="avatarInput" name="avatar" accept="image/*"><br><br>
-        </div>
+      <div class="field-container">
+        <label for="newsletter">Subscribe to newsletter:</label>
+        <input type="checkbox" id="newsletterCheckbox" name="newsletter" value="yes"><br><br>
+      </div>
 
-        <div class="field-container">
-          <label for="bio">Bio:</label><br>
-          <textarea id="bioTextarea" name="bio" rows="4" cols="50"></textarea><br><br>
-        </div>
+      <div class="field-container">
+        <label for="terms">Agree to terms and conditions:</label>
+        <input type="checkbox" id="termsCheckbox" name="terms" required><br>
+      </div>
 
-        
-        <button value="Sign Up" class="submit"> Submit</button>        <!-- we can add onclick property and handle it with JS -->
-      
-      </form>
-    </div>
-      
+      <div class="field-container avatar">
+        <label for="avatar">Upload Avatar:</label><br>
+        <input type="file" id="avatarInput" name="avatar" accept="image/*"><br><br>
+      </div>
+
+      <div class="field-container">
+        <label for="bio">Bio:</label><br>
+        <textarea id="bioTextarea" name="bio" rows="4" cols="50"></textarea><br><br>
+      </div>
+
+
+      <button value="Sign Up" type="submit" class="submit"> Submit</button>
+      <!-- we can add onclick property and handle it with JS -->
+
+    </form>
+  </div>
+
 </body>
+
 </html>
